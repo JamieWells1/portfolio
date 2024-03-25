@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jamie Wells</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="templates.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div id="section-one">
+        <h1 class="heading">Jamie Wells' Portfolio</h1>
+        <p class="paragraph">
+          I'm an 18 year old Web Developer, and this is my portfolio of various
+          Web Projects I've built using HTML, CSS, plain Javascript and various
+          Javascript libraries including Node, jQuery, and Bootstrap. Take a
+          look through my timeline and see how my work has progressed!
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: My First Web Application -->
+
+    <section class="section">
+      <div class="column-left">
+        <h2 class="heading">Recorrido de España</h2>
+        <p class="paragraph date">August, 2023</p>
+        <p class="paragraph">
+          Eager and confident, I decided to come out of my shell and create
+          something brand new to me. I decided on a web application used for
+          taking restaurant orders, designed to take (pretend) payments and log
+          each transaction.
+        </p>
+        <p class="paragraph">
+          Overall, I was quite pleased with its functionality, considering it
+          was my first real project. However, in terms of design, there was much
+          to be desired.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/jamies-spanish-specials/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-right slider-container">
+        <div class="slider">
+          <img src="./recorrido-assets/recorrido-1.png" alt="recorrido-1" />
+          <img src="./recorrido-assets/recorrido-2.png" alt="recorrido-2" />
+          <img src="./recorrido-assets/recorrido-3.png" alt="recorrido-3" />
+          <img src="./recorrido-assets/recorrido-4.png" alt="recorrido-4" />
+          <img src="./recorrido-assets/recorrido-5.png" alt="recorrido-5" />
+        </div>
+        <div class="nav-buttons">
+          <button id="prevBtn1">
+            <span class="material-symbols-outlined"> navigate_before </span>
+          </button>
+          <button id="nextBtn1">
+            <span class="material-symbols-outlined"> navigate_next </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DISCHARGING A CAPACITOR -->
+
+    <section class="section" id="capacitance-section">
+      <div class="column-right slider-container" id="capacitance-slider">
+        <div class="slider">
+          <img src="./capacitance-assets/capacitance-1.png" />
+          <img src="./capacitance-assets/capacitance-2.png" />
+        </div>
+        <div class="nav-buttons">
+          <button id="prevBtn2">
+            <span class="material-symbols-outlined"> navigate_before </span>
+          </button>
+          <button id="nextBtn2">
+            <span class="material-symbols-outlined"> navigate_next </span>
+          </button>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-left">
+        <h2 class="heading">Discharging a Capacitor</h2>
+        <p class="paragraph date">September, 2023</p>
+        <p class="paragraph">
+          To save time on our in-class calculations, I created a web application
+          in around 6 hours, which models a concept found in Physics, known as
+          discharging a capacitor.
+        </p>
+        <p class="paragraph">
+          I presented my application the next day in lesson. You type all the
+          values obtained during the experiment into the calculator, and it will
+          generate two graphs using ChartJS to visualise the values taken from
+          the experiment.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/discharging-a-capacitor/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MONEYMOVER -->
+
+    <section class="section">
+      <div class="column-left">
+        <h2 class="heading">MoneyMover</h2>
+        <p class="paragraph date">September, 2023</p>
+        <p class="paragraph">
+          A project I built mainly to practice my UI/UX skills, "MoneyMover" is
+          a web application that is used to model and visualise various types of
+          transactions, including receiving and sending payments.
+        </p>
+        <p class="paragraph">
+          This project is currently incomplete, but I plan to go back and
+          complete it at a later date.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/MoneyMover/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-right slider-container">
+        <div class="slider" id="moneymover-slider">
+          <img src="./moneymover-assets/moneymover-1.png" alt="recorrido-1" />
+          <img src="./moneymover-assets/moneymover-2.png" alt="recorrido-2" />
+          <img src="./moneymover-assets/moneymover-3.png" alt="recorrido-3" />
+        </div>
+        <div class="nav-buttons">
+          <button id="prevBtn3">
+            <span class="material-symbols-outlined"> navigate_before </span>
+          </button>
+          <button id="nextBtn3">
+            <span class="material-symbols-outlined"> navigate_next </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="capacitance-section">
+      <div class="column-right slider-container">
+        <div class="slider" id="capacitance-slider">
+          <img src="./newsletter-assets/newsletter-1.png" />
+          <img src="./newsletter-assets/newsletter-2.png" />
+          <img src="./newsletter-assets/newsletter-3.png" />
+          <img src="./newsletter-assets/newsletter-4.png" />
+        </div>
+        <div class="nav-buttons">
+          <button id="prevBtn4">
+            <span class="material-symbols-outlined"> navigate_before </span>
+          </button>
+          <button id="nextBtn4">
+            <span class="material-symbols-outlined"> navigate_next </span>
+          </button>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-left">
+        <h2 class="heading">FAW Newsletter</h2>
+        <p class="paragraph date">October, 2023</p>
+        <p class="paragraph">
+          The FAW Newsletter site was my first live-website that I coded from
+          scratch. It was for my school newsletter, of which I was Editor, which
+          I made as we were having difficulty with transferring written pieces
+          to one another.
+        </p>
+        <p class="paragraph">
+          The site also gives a basic overview of the newsletter, including what
+          each edition contains, why you should read and how you can grab a
+          copy.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://www.fawnewsletter.com/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Fission and Fusion Research Project -->
+
+    <section class="section">
+      <div class="column-left">
+        <h2 class="heading">Fission and Fusion Research Project</h2>
+        <p class="paragraph date">December, 2023</p>
+        <p class="paragraph">
+          This was a research paper I made out of curiosity in just how much
+          energy fission and fusion actually produce.
+        </p>
+        <p class="paragraph">
+          After two hours of calculations, I came to my final conclusion, which
+          was backed up by over 90% of Google sources. This is where you can
+          read my documented findings, and discover the true reality of fission
+          and fusion for yourself...
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/fission-and-fusion-rp/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-right slider-container">
+        <div class="slider" id="moneymover-slider">
+          <img
+            src="./fission-fusion-assets/fission-fusion-preview.png"
+            alt="fission-and-fusion-rp"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="capacitance-section">
+      <div class="column-right slider-container">
+        <div class="slider" id="capacitance-slider">
+          <img src="./energy-calculator-assets/energy-calculator-preview.png" />
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-left">
+        <h2 class="heading">Kinetic Energy Calculator</h2>
+        <p class="paragraph date">January, 2024</p>
+        <p class="paragraph">
+          To help with physics comparisons in future calculations, I created a
+          website with an infinite amount of combinations of calculatable values
+          for kinetic energy when choosing different objects, each with a
+          defined (average) mass.
+        </p>
+        <p class="paragraph">
+          However, as of making this website, there is no limit on how fast the
+          user wants their object to be travelling, as well as the calculator
+          not being able to account for relativistic effects which occur at
+          speeds near the speed of causality.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/how-much-energy/index.html")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="column-left">
+        <h2 class="heading">Graph Variance Simulator</h2>
+        <p class="paragraph date">January, 2023</p>
+        <p class="paragraph">
+          A graph simulator which uses ChartJS to construct charts, and takes 3
+          parameters to do this. These parameters include the starting point,
+          the number of events, and how much the points will vary per event.
+        </p>
+        <p class="paragraph">
+          From this, we can deduce that the higher the value for variance, the
+          more likely it is that the starting number will have crashed to zero
+          by the end of the simulation.
+        </p>
+        <div
+          class="visit-site"
+          onclick='goToProj("https://jamiewells1.github.io/graph-sim/")'
+        >
+          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="column-right slider-container">
+        <div class="slider" id="moneymover-slider">
+          <img src="./graph-sim-assets/graph-sim.png" alt="graph-sim" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
