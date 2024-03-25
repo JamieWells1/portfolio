@@ -10,20 +10,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+
   justify-items: center;
   justify-content: center;
-  align-items: center;
   position: relative;
-  top: 25vh;
+  top: 5vh;
   height: 400px;
-  margin-bottom: 40vh;
-  @media (max-width: 700px) {
-    text-align: center;
-  }
+  margin-bottom: 20vh;
+
+  text-align: center;
 }
 
 #section-one > p {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
