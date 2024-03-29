@@ -3,6 +3,10 @@ function goToProj(projectURL) {
 }
 
 const sliders = document.getElementsByClassName("slider");
+const websitesTab = document.getElementById("websites-tab");
+const websitesContent = document.getElementById("websites-content");
+const algorithmsTab = document.getElementById("algorithms-tab");
+const algorithmsContent = document.getElementById("algorithms-content");
 
 function createSlider() {
   for (let i = 0; i < sliders.length; i++) {
@@ -34,3 +38,17 @@ function createSlider() {
 }
 
 createSlider();
+
+websitesTab.addEventListener("click", () => {
+  websitesTab.classList.add("active");
+  algorithmsTab.className = algorithmsTab.className.replace(" active", "");
+  websitesContent.style.display = "block";
+  algorithmsContent.style.display = "none";
+});
+
+algorithmsTab.addEventListener("click", () => {
+  algorithmsTab.classList.add("active");
+  websitesTab.className = websitesTab.className.replace(" active", "");
+  websitesContent.style.display = "none";
+  algorithmsContent.style.display = "block";
+});

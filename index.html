@@ -27,310 +27,396 @@
           Javascript libraries including Node, jQuery, and Bootstrap. Take a
           look through my timeline and see how my work has progressed!
         </p>
+        <div id="tabs">
+          <div class="tab active" id="websites-tab">
+            <span class="material-symbols-outlined">devices</span>
+            <h3>Websites</h3>
+          </div>
+          <div class="tab" id="algorithms-tab">
+            <span class="material-symbols-outlined">family_history</span>
+            <h3>Algorithms</h3>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- SECTION 1: My First Web Application -->
 
-    <section class="section">
-      <div class="column-left">
-        <h2 class="heading">Recorrido de España</h2>
-        <p class="paragraph date">August, 2023</p>
-        <p class="paragraph">
-          Eager and confident, I decided to come out of my shell and create
-          something brand new to me. I decided on a web application used for
-          taking restaurant orders, designed to take (pretend) payments and log
-          each transaction.
-        </p>
-        <p class="paragraph">
-          Overall, I was quite pleased with its functionality, considering it
-          was my first real project. However, in terms of design, there was much
-          to be desired.
+    <div id="websites-content">
+      <section class="section">
+        <div class="column-left">
+          <h2 class="heading">Recorrido de España</h2>
+          <p class="paragraph date">August, 2023</p>
+          <p class="paragraph">
+            Eager and confident, I decided to come out of my shell and create
+            something brand new to me. I decided on a web application used for
+            taking restaurant orders, designed to take (pretend) payments and
+            log each transaction.
+          </p>
+          <p class="paragraph">
+            Overall, I was quite pleased with its functionality, considering it
+            was my first real project. However, in terms of design, there was
+            much to be desired.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/jamies-spanish-specials/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-right slider-container">
+          <div class="slider">
+            <img src="./recorrido-assets/recorrido-1.png" alt="recorrido-1" />
+            <img src="./recorrido-assets/recorrido-2.png" alt="recorrido-2" />
+            <img src="./recorrido-assets/recorrido-3.png" alt="recorrido-3" />
+            <img src="./recorrido-assets/recorrido-4.png" alt="recorrido-4" />
+            <img src="./recorrido-assets/recorrido-5.png" alt="recorrido-5" />
+          </div>
+          <div class="nav-buttons">
+            <button id="prevBtn1">
+              <span class="material-symbols-outlined"> navigate_before </span>
+            </button>
+            <button id="nextBtn1">
+              <span class="material-symbols-outlined"> navigate_next </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: DISCHARGING A CAPACITOR -->
+
+      <section class="section" id="capacitance-section">
+        <div class="column-right slider-container" id="capacitance-slider">
+          <div class="slider">
+            <img src="./capacitance-assets/capacitance-1.png" />
+            <img src="./capacitance-assets/capacitance-2.png" />
+          </div>
+          <div class="nav-buttons">
+            <button id="prevBtn2">
+              <span class="material-symbols-outlined"> navigate_before </span>
+            </button>
+            <button id="nextBtn2">
+              <span class="material-symbols-outlined"> navigate_next </span>
+            </button>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-left">
+          <h2 class="heading">Discharging a Capacitor</h2>
+          <p class="paragraph date">September, 2023</p>
+          <p class="paragraph">
+            To save time on our in-class calculations, I created a web
+            application in around 6 hours, which models a concept found in
+            Physics, known as discharging a capacitor.
+          </p>
+          <p class="paragraph">
+            I presented my application the next day in lesson. You type all the
+            values obtained during the experiment into the calculator, and it
+            will generate two graphs using ChartJS to visualise the values taken
+            from the experiment.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/discharging-a-capacitor/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MONEYMOVER -->
+
+      <section class="section">
+        <div class="column-left">
+          <h2 class="heading">MoneyMover</h2>
+          <p class="paragraph date">September, 2023</p>
+          <p class="paragraph">
+            A project I built mainly to practice my UI/UX skills, "MoneyMover"
+            is a web application that is used to model and visualise various
+            types of transactions, including receiving and sending payments.
+          </p>
+          <p class="paragraph">
+            This project is currently incomplete, but I plan to go back and
+            complete it at a later date.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/MoneyMover/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-right slider-container">
+          <div class="slider" id="moneymover-slider">
+            <img src="./moneymover-assets/moneymover-1.png" alt="recorrido-1" />
+            <img src="./moneymover-assets/moneymover-2.png" alt="recorrido-2" />
+            <img src="./moneymover-assets/moneymover-3.png" alt="recorrido-3" />
+          </div>
+          <div class="nav-buttons">
+            <button id="prevBtn3">
+              <span class="material-symbols-outlined"> navigate_before </span>
+            </button>
+            <button id="nextBtn3">
+              <span class="material-symbols-outlined"> navigate_next </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capacitance-section">
+        <div class="column-right slider-container">
+          <div class="slider" id="capacitance-slider">
+            <img src="./newsletter-assets/newsletter-1.png" />
+            <img src="./newsletter-assets/newsletter-2.png" />
+            <img src="./newsletter-assets/newsletter-3.png" />
+            <img src="./newsletter-assets/newsletter-4.png" />
+          </div>
+          <div class="nav-buttons">
+            <button id="prevBtn4">
+              <span class="material-symbols-outlined"> navigate_before </span>
+            </button>
+            <button id="nextBtn4">
+              <span class="material-symbols-outlined"> navigate_next </span>
+            </button>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-left">
+          <h2 class="heading">FAW Newsletter</h2>
+          <p class="paragraph date">October, 2023</p>
+          <p class="paragraph">
+            The FAW Newsletter site was my first live-website that I coded from
+            scratch. It was for my school newsletter, of which I was Editor,
+            which I made as we were having difficulty with transferring written
+            pieces to one another.
+          </p>
+          <p class="paragraph">
+            The site also gives a basic overview of the newsletter, including
+            what each edition contains, why you should read and how you can grab
+            a copy.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://www.fawnewsletter.com/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Fission and Fusion Research Project -->
+
+      <section class="section">
+        <div class="column-left">
+          <h2 class="heading">Fission and Fusion Research Project</h2>
+          <p class="paragraph date">December, 2023</p>
+          <p class="paragraph">
+            This was a research paper I made out of curiosity in just how much
+            energy fission and fusion actually produce.
+          </p>
+          <p class="paragraph">
+            After two hours of calculations, I came to my final conclusion,
+            which was backed up by over 90% of Google sources. This is where you
+            can read my documented findings, and discover the true reality of
+            fission and fusion for yourself...
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/fission-and-fusion-rp/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-right slider-container">
+          <div id="moneymover-slider">
+            <img
+              src="./fission-fusion-assets/fission-fusion-preview.png"
+              alt="fission-and-fusion-rp"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="capacitance-section">
+        <div class="column-right slider-container">
+          <div id="capacitance-slider">
+            <img
+              src="./energy-calculator-assets/energy-calculator-preview.png"
+            />
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-left">
+          <h2 class="heading">Kinetic Energy Calculator</h2>
+          <p class="paragraph date">January, 2024</p>
+          <p class="paragraph">
+            To help with physics comparisons in future calculations, I created a
+            website with an infinite amount of combinations of calculatable
+            values for kinetic energy when choosing different objects, each with
+            a defined (average) mass.
+          </p>
+          <p class="paragraph">
+            However, as of making this website, there is no limit on how fast
+            the user wants their object to be travelling, as well as the
+            calculator not being able to account for relativistic effects which
+            occur at speeds near the speed of causality.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/how-much-energy/index.html")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="column-left">
+          <h2 class="heading">Graph Variance Simulator</h2>
+          <p class="paragraph date">February, 2024</p>
+          <p class="paragraph">
+            A graph simulator which uses ChartJS to construct charts, and takes
+            3 parameters to do this. These parameters include the starting
+            point, the number of events, and how much the points will vary per
+            event.
+          </p>
+          <p class="paragraph">
+            From this, we can deduce that the higher the value for variance, the
+            more likely it is that the starting number will have crashed to zero
+            by the end of the simulation.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/graph-sim/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="column-right slider-container">
+          <div id="moneymover-slider">
+            <img src="./graph-sim-assets/graph-sim.png" alt="graph-sim" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Bingo and raffle caller -->
+
+      <section class="section">
+        <div class="column-right slider-container">
+          <div class="slider" id="capacitance-slider">
+            <img src="./games-assets/games-preview.png" />
+            <img src="./games-assets/raffle-preview.png" />
+          </div>
+          <div class="nav-buttons">
+            <button id="prevBtn5">
+              <span class="material-symbols-outlined"> navigate_before </span>
+            </button>
+            <button id="nextBtn5">
+              <span class="material-symbols-outlined"> navigate_next </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Left Column -->
+        <div class="column-left">
+          <h2 class="heading">Bingo and raffle caller</h2>
+          <p class="paragraph date">March, 2024</p>
+          <p class="paragraph">
+            I decided to host a Quiz Night for my school, which had over 100
+            attendees. I wanted to be able to project the games numbers on the
+            big screen, but the sites I found to do this were old and full of
+            banner ads. So I created my own.
+          </p>
+          <p class="paragraph">
+            My bingo and raffle caller is a minimalist, intuitive site which
+            allows the user to generate and reset called numbers, as well as
+            choose how many raffle tickets are in the pot.
+          </p>
+          <div
+            class="visit-site"
+            onclick='goToProj("https://jamiewells1.github.io/games/")'
+          >
+            Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="algorithms-content" style="display: none">
+      <!-- Algorithms page here -->
+      <div class="repo">
+        <h2>Login Verification</h2>
+        <p><i>Time complexity: O(1)</i></p>
+        <p>
+          Some theory JavaScript code I used in designing the login verification
+          system for the school newsletter site.
         </p>
         <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/jamies-spanish-specials/")'
+          class="visit-repo"
+          onclick='goToProj("https://github.com/JamieWells1/login-verification")'
         >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          Visit repo
+          <span class="material-symbols-outlined">open_in_new</span>
         </div>
       </div>
-      <!-- Right Column -->
-      <div class="column-right slider-container">
-        <div class="slider">
-          <img src="./recorrido-assets/recorrido-1.png" alt="recorrido-1" />
-          <img src="./recorrido-assets/recorrido-2.png" alt="recorrido-2" />
-          <img src="./recorrido-assets/recorrido-3.png" alt="recorrido-3" />
-          <img src="./recorrido-assets/recorrido-4.png" alt="recorrido-4" />
-          <img src="./recorrido-assets/recorrido-5.png" alt="recorrido-5" />
-        </div>
-        <div class="nav-buttons">
-          <button id="prevBtn1">
-            <span class="material-symbols-outlined"> navigate_before </span>
-          </button>
-          <button id="nextBtn1">
-            <span class="material-symbols-outlined"> navigate_next </span>
-          </button>
-        </div>
-      </div>
-    </section>
 
-    <!-- SECTION 2: DISCHARGING A CAPACITOR -->
-
-    <section class="section" id="capacitance-section">
-      <div class="column-right slider-container" id="capacitance-slider">
-        <div class="slider">
-          <img src="./capacitance-assets/capacitance-1.png" />
-          <img src="./capacitance-assets/capacitance-2.png" />
-        </div>
-        <div class="nav-buttons">
-          <button id="prevBtn2">
-            <span class="material-symbols-outlined"> navigate_before </span>
-          </button>
-          <button id="nextBtn2">
-            <span class="material-symbols-outlined"> navigate_next </span>
-          </button>
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div class="column-left">
-        <h2 class="heading">Discharging a Capacitor</h2>
-        <p class="paragraph date">September, 2023</p>
-        <p class="paragraph">
-          To save time on our in-class calculations, I created a web application
-          in around 6 hours, which models a concept found in Physics, known as
-          discharging a capacitor.
-        </p>
-        <p class="paragraph">
-          I presented my application the next day in lesson. You type all the
-          values obtained during the experiment into the calculator, and it will
-          generate two graphs using ChartJS to visualise the values taken from
-          the experiment.
+      <div class="repo">
+        <h2>Minimum steps</h2>
+        <p><i>Time complexity: O(n)</i></p>
+        <p>
+          This is a NodeJS algorithm which controls a robot. The function takes
+          an input of directions, and returns the minimum number of steps needed
+          for the robot to return back to the starting position.
         </p>
         <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/discharging-a-capacitor/")'
+          class="visit-repo"
+          onclick='goToProj("https://github.com/JamieWells1/min-movement")'
         >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          Visit repo
+          <span class="material-symbols-outlined">open_in_new</span>
         </div>
       </div>
-    </section>
 
-    <!-- SECTION 3: MONEYMOVER -->
-
-    <section class="section">
-      <div class="column-left">
-        <h2 class="heading">MoneyMover</h2>
-        <p class="paragraph date">September, 2023</p>
-        <p class="paragraph">
-          A project I built mainly to practice my UI/UX skills, "MoneyMover" is
-          a web application that is used to model and visualise various types of
-          transactions, including receiving and sending payments.
-        </p>
-        <p class="paragraph">
-          This project is currently incomplete, but I plan to go back and
-          complete it at a later date.
+      <div class="repo">
+        <h2>Best time to buy a stock</h2>
+        <p><i>Time complexity: O(n)</i></p>
+        <p>
+          An algorithm which takes an array of prices, with the index of each
+          item representing the day, and returns the maximum possible amount of
+          profit obtainable.
         </p>
         <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/MoneyMover/")'
+          class="visit-repo"
+          onclick='goToProj("https://github.com/JamieWells1/stocks")'
         >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
+          Visit repo
+          <span class="material-symbols-outlined">open_in_new</span>
         </div>
       </div>
-      <!-- Right Column -->
-      <div class="column-right slider-container">
-        <div class="slider" id="moneymover-slider">
-          <img src="./moneymover-assets/moneymover-1.png" alt="recorrido-1" />
-          <img src="./moneymover-assets/moneymover-2.png" alt="recorrido-2" />
-          <img src="./moneymover-assets/moneymover-3.png" alt="recorrido-3" />
-        </div>
-        <div class="nav-buttons">
-          <button id="prevBtn3">
-            <span class="material-symbols-outlined"> navigate_before </span>
-          </button>
-          <button id="nextBtn3">
-            <span class="material-symbols-outlined"> navigate_next </span>
-          </button>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="capacitance-section">
-      <div class="column-right slider-container">
-        <div class="slider" id="capacitance-slider">
-          <img src="./newsletter-assets/newsletter-1.png" />
-          <img src="./newsletter-assets/newsletter-2.png" />
-          <img src="./newsletter-assets/newsletter-3.png" />
-          <img src="./newsletter-assets/newsletter-4.png" />
-        </div>
-        <div class="nav-buttons">
-          <button id="prevBtn4">
-            <span class="material-symbols-outlined"> navigate_before </span>
-          </button>
-          <button id="nextBtn4">
-            <span class="material-symbols-outlined"> navigate_next </span>
-          </button>
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div class="column-left">
-        <h2 class="heading">FAW Newsletter</h2>
-        <p class="paragraph date">October, 2023</p>
-        <p class="paragraph">
-          The FAW Newsletter site was my first live-website that I coded from
-          scratch. It was for my school newsletter, of which I was Editor, which
-          I made as we were having difficulty with transferring written pieces
-          to one another.
-        </p>
-        <p class="paragraph">
-          The site also gives a basic overview of the newsletter, including what
-          each edition contains, why you should read and how you can grab a
-          copy.
+      <div class="repo">
+        <h2>Input contained</h2>
+        <p><i>Time complexity: O(nm)</i></p>
+        <p>
+          An algorithm which checks if one input fully contains another input,
+          and if so, returns a true boolean statement.
         </p>
         <div
-          class="visit-site"
-          onclick='goToProj("https://www.fawnewsletter.com/")'
+          class="visit-repo"
+          onclick='goToProj("https://github.com/JamieWells1/contains-input")'
         >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: Fission and Fusion Research Project -->
-
-    <section class="section">
-      <div class="column-left">
-        <h2 class="heading">Fission and Fusion Research Project</h2>
-        <p class="paragraph date">December, 2023</p>
-        <p class="paragraph">
-          This was a research paper I made out of curiosity in just how much
-          energy fission and fusion actually produce.
-        </p>
-        <p class="paragraph">
-          After two hours of calculations, I came to my final conclusion, which
-          was backed up by over 90% of Google sources. This is where you can
-          read my documented findings, and discover the true reality of fission
-          and fusion for yourself...
-        </p>
-        <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/fission-and-fusion-rp/")'
-        >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div class="column-right slider-container">
-        <div id="moneymover-slider">
-          <img
-            src="./fission-fusion-assets/fission-fusion-preview.png"
-            alt="fission-and-fusion-rp"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="capacitance-section">
-      <div class="column-right slider-container">
-        <div id="capacitance-slider">
-          <img src="./energy-calculator-assets/energy-calculator-preview.png" />
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div class="column-left">
-        <h2 class="heading">Kinetic Energy Calculator</h2>
-        <p class="paragraph date">January, 2024</p>
-        <p class="paragraph">
-          To help with physics comparisons in future calculations, I created a
-          website with an infinite amount of combinations of calculatable values
-          for kinetic energy when choosing different objects, each with a
-          defined (average) mass.
-        </p>
-        <p class="paragraph">
-          However, as of making this website, there is no limit on how fast the
-          user wants their object to be travelling, as well as the calculator
-          not being able to account for relativistic effects which occur at
-          speeds near the speed of causality.
-        </p>
-        <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/how-much-energy/index.html")'
-        >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="column-left">
-        <h2 class="heading">Graph Variance Simulator</h2>
-        <p class="paragraph date">February, 2024</p>
-        <p class="paragraph">
-          A graph simulator which uses ChartJS to construct charts, and takes 3
-          parameters to do this. These parameters include the starting point,
-          the number of events, and how much the points will vary per event.
-        </p>
-        <p class="paragraph">
-          From this, we can deduce that the higher the value for variance, the
-          more likely it is that the starting number will have crashed to zero
-          by the end of the simulation.
-        </p>
-        <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/graph-sim/")'
-        >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
-        </div>
-      </div>
-      <!-- Right Column -->
-      <div class="column-right slider-container">
-        <div id="moneymover-slider">
-          <img src="./graph-sim-assets/graph-sim.png" alt="graph-sim" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Bingo and raffle caller -->
-
-    <section class="section">
-      <div class="column-right slider-container">
-        <div class="slider" id="capacitance-slider">
-          <img src="./games-assets/games-preview.png" />
-          <img src="./games-assets/raffle-preview.png" />
-        </div>
-        <div class="nav-buttons">
-          <button id="prevBtn5">
-            <span class="material-symbols-outlined"> navigate_before </span>
-          </button>
-          <button id="nextBtn5">
-            <span class="material-symbols-outlined"> navigate_next </span>
-          </button>
+          Visit repo
+          <span class="material-symbols-outlined">open_in_new</span>
         </div>
       </div>
 
-      <!-- Left Column -->
-      <div class="column-left">
-        <h2 class="heading">Bingo and raffle caller</h2>
-        <p class="paragraph date">March, 2024</p>
-        <p class="paragraph">
-          I decided to host a Quiz Night for my school, which had over 100
-          attendees. I wanted to be able to project the games numbers on the big
-          screen, but the sites I found to do this were old and full of banner
-          ads. So I created my own.
-        </p>
-        <p class="paragraph">
-          My bingo and raffle caller is a minimalist, intuitive site which
-          allows the user to generate and reset called numbers, as well as
-          choose how many raffle tickets are in the pot.
-        </p>
-        <div
-          class="visit-site"
-          onclick='goToProj("https://jamiewells1.github.io/games/")'
-        >
-          Visit Site<span class="material-symbols-outlined">open_in_new</span>
-        </div>
-      </div>
-    </section>
+      <!-- Gap here for adding new section -->
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./index.js"></script>

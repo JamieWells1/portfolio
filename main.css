@@ -10,24 +10,118 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
   justify-items: center;
   justify-content: center;
   position: relative;
-  top: 5vh;
-  height: 400px;
-  margin-bottom: 20vh;
-
+  height: 300px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
 #section-one > p {
   width: 100%;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #section-one > h2 {
   position: relative;
   top: 50px;
   font-size: 30px;
+}
+
+#tabs {
+  min-width: 40%;
+  height: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab {
+  width: 50%;
+  background-color: rgb(82, 82, 82);
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  transition: 0.3s;
+}
+
+.tab > h3 {
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.tab:hover {
+  background-color: rgb(95, 95, 95);
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgb(122, 122, 122);
+}
+
+#algorithms-content {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  height: fit-content;
+  background-color: rgb(78, 78, 78);
+  padding: 30px 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.repo > h2 {
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  #section-one > p {
+    align-items: center;
+    align-self: center;
+  }
+
+  #tabs {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .tab {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+  }
+
+  .tab > h3 {
+    font-size: 14px;
+  }
+
+  .repo {
+    width: 70%;
+    margin-top: 50px;
+  }
 }

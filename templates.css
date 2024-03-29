@@ -1,6 +1,10 @@
 .heading {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 600;
+}
+
+.material-symbols-outlined {
+  font-size: 20px;
 }
 
 .paragraph {
@@ -10,7 +14,7 @@
 .section {
   display: flex;
   height: fit-content;
-  margin-bottom: 150px;
+  margin-bottom: 70px;
   width: 100%;
   justify-content: space-around;
   margin-left: auto;
@@ -18,21 +22,22 @@
 }
 
 .section > .column-left {
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: rgb(82, 82, 82);
   height: fit-content;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  width: 45%;
+  width: 46%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 30px;
 }
 
 .section > .column-right {
   background-color: transparent;
   height: fit-content;
-  width: 50%;
+  width: 46%;
 }
 
 .section > .column-left > .heading,
@@ -46,33 +51,54 @@
 }
 
 .visit-site {
-  height: 40px;
+  height: 35px;
   margin-left: 6%;
-  width: 150px;
-  font-size: 18px;
+  width: 120px;
+  font-size: 16px;
   display: flex;
   align-items: center;
-  text-indent: 20px;
+  justify-content: center;
   background-color: rgb(114, 114, 114);
-  border-radius: 10px;
+  border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
-  margin-top: 2%;
-  margin-bottom: 4vh;
 }
 
 .visit-site > span {
   position: relative;
+  margin-left: 10px;
 }
 
 .visit-site:hover {
   background-color: rgb(141, 141, 141);
 }
 
+.visit-repo {
+  height: 35px;
+  width: 120px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(114, 114, 114);
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.visit-repo > span {
+  position: relative;
+  margin-left: 10px;
+}
+
+.visit-repo:hover {
+  background-color: rgb(141, 141, 141);
+}
+
 img {
   width: 100%;
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* Slider CSS */
@@ -204,5 +230,9 @@ img {
   }
   img {
     margin-top: 50px;
+  }
+
+  .material-symbols-outlined {
+    font-size: 16px;
   }
 }
